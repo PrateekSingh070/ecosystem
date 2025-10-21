@@ -1,0 +1,34 @@
+{
+  "name": "json-schema-kit",
+  "description": "Some (very) simple helper functions for writing concise JSON Schema — perfect for OpenAI Structured Outputs.",
+  "type": "module",
+  "version": "0.3.0",
+  "license": "MIT",
+  "keywords": [
+    "json-schema",
+    "openai",
+    "structured-outputs"
+  ],
+  "source": "./src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js",
+    "types": "./dist/index.d.ts"
+  },
+  "main": "./dist/index.cjs",
+  "umd:main": "./dist/index.umd.js",
+  "module": "./dist/index.module.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "format": "prettier . --write",
+    "build": "microbundle",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^29.7.0",
+    "microbundle": "^0.15.1",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.4.0"
+  }
+}
